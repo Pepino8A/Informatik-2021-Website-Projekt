@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #333333;
@@ -17,13 +21,15 @@ div {
 div.text p,h1,h2,h3,h4,h5,h6 {
   margin-top: 0%;
   margin-bottom: 0%;
-  padding: 1% 10% 1% 7%;
+  padding: 1% 7% 1% 7%;
   display: flex;
   text-align: center;
 }
 
 div.text {
   background-color: blue;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 a:link{
