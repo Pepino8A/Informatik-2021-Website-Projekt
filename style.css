@@ -48,6 +48,7 @@ a:link{
   width: 100%;
   position: sticky;
   top: 0px;
+  box-shadow: 0px 2px 10px #292929;
 }
 
 #header-list {
