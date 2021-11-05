@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="header" class="sticky">
-      <span> Webseite von Nikolas </span>
+      <span> Webseite von Nikolas & David </span>
       <ul id="header-list">
           <li> <a href="index.html"> <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/DAwqy5hMljnxm7evA5ASN/adeff1c13522f7f96ca06d550b9a5892/r6s-y6-logo.png" alt="rainbow six logo"> </a> </li>
           <li> <a href="https://de.wikipedia.org/wiki/Spezial:Zuf%C3%A4llige_Seite"> Liste eins </a> </li>
@@ -18,21 +18,33 @@
       </ul>
     </div>
     <div id="content">
-      <div id="gameplay">
-        <div class="media">
-          <div class="video-placeholder">
-              <div class="video">
+      <div class="parallax">
+        <div class="parallax__group"> <!-- es gibt 2 "_" -->
+        <div id="gameplay">
+          <!-- parallax_layer-back start - soll hinten sein -->
+          <div class="parallax__layer parallax__layer--back">
+          <div class="media">
+            <div class="video-placeholder">
+                <div class="video">
+                </div>
+                <div class="image-placeholder">
+                </div>
               </div>
-              <div class="image-placeholder">
             </div>
           </div>
+          </div>
+          <!--parallax_layer-back endet hier -->
+          <!-- parallax_layer-base - soll vorne sein -->
+          <div class="parallax__layer parallax__layer--back">
+            <div class="text">
+              <h2> Gameplay </h2>
+                <p> Rainbow Six Siege ist ein Taktik-First-Person-Shooter, in dem Terror-Anschläge und andere großangelegte Verbrechen vereitelt werden.
+                </p>
+              </div>
+          </div>
+          <!-- parallax_layer-base endet hier -->
         </div>
-        <div class="text">
-            <h2> Gameplay </h2>
-              <p> Rainbow Six Siege ist ein Taktik-First-Person-Shooter, in dem Terror-Anschläge und andere großangelegte Verbrechen vereitelt werden.
-              </p>
-        </div>
-      </div>
+
       <div id="operator">
         <div class="media">
           <div class="video-placeholder">
@@ -49,6 +61,7 @@
         </div>
       </div>
     </div>
+  </div>
 
     <div id="footlocker">
     </div>
