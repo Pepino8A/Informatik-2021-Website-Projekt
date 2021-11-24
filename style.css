@@ -97,8 +97,15 @@ a:visited {
   text-align: center;
 }
 
-#operator-list tr, td, table {
+ /* #operator-list tr, td, table {
   border: solid 1px;
+} */
+
+#operator-list img {
+  transition: 0.5s;
+  transform: scale(1);
+  width: 10vw;
+  border: solid white 1px;
 }
 
 #operator-list img:hover {
