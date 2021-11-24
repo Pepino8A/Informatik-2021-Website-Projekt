@@ -48,10 +48,10 @@ a:visited {
   text-decoration: none;
 }
 
-img:hover {
+/*img:hover {
   transition: 0.5s;
   transform: scale(1.2);
-}
+} */
 
 ::selection {
   background-color: #b8b8b8;
@@ -99,9 +99,10 @@ img:hover {
 #operator-list tr, td, table {
   border: solid 1px;
 }
-
-
-
+#operator-list img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
 
 #footlocker {
   position: absolute;
