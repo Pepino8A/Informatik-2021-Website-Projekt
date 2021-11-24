@@ -47,6 +47,12 @@ a:visited {
   color: white;
   text-decoration: none;
 }
+
+img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
 ::selection {
   background-color: #b8b8b8;
 }
@@ -90,6 +96,12 @@ a:visited {
   text-align: center;
 }
 
+#operator-list tr, td, table {
+  border: solid 1px;
+}
+
+
+
 
 #footlocker {
   position: absolute;
@@ -102,12 +114,14 @@ a:visited {
   font-size: 0.7em;
   opacity: 0.75;
 }
+
 #footerlist ul {
   padding-left: 0;
   position: relative;
   margin-top: 0.7%;
   margin-bottom: 1.5%;
 }
+
 #footerlist li {
   padding: 0% 5% 0% 5%;
   list-style-type: none;
