@@ -101,6 +101,10 @@ a:visited {
   border: solid 1px;
 }
 
+#operator-list img {
+  width: 10vw;
+}
+
 #operator-list img:hover {
   transition: 0.5s;
   transform: scale(1.2);
