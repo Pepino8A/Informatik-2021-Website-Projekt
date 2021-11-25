@@ -114,17 +114,27 @@ a:visited {
   text-align: center;
 }
 
+#operator-list td,tr {          /* man muss den z-index DER LISTENELEMTENTE angeben, weil img das kind ist */
+  position: relative;           /* a child is limited by its parent */
+  z-index: 1;                   /* <table> anstatt tr und td geht NICHT */
+}
+#operator-list td:hover,tr:hover {
+  z-index: 2;
+}
+
 #operator-list img {
+  position: relative;
   transition: 0.5s;
   transform: scale(1);
   width: 7.5vw;
   border: solid white 1px;
   background-color: #1f1f1f;
+  z-index: 1;               /* z-index sollte trozdem hier bleiben; kann nicht vererbt werden */
 }
-
 #operator-list img:hover {
   transition: 0.5s;
   transform: scale(1.2);
+  z-index: 2;               /* hier auch */
 }
 
 #footlocker {
