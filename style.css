@@ -46,6 +46,11 @@ div.text {
   padding-bottom: 2%;
 }
 
+div.text-operator-list {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 a:link{
   color: #b5b5b5;
   text-decoration: none;
@@ -88,6 +93,16 @@ a:visited {
   justify-content: space-around;
 }
 
+#header-list li {
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+#header-list li:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
 #header-list img {
   transition: 0.5s;
   transform: scale(1);
@@ -95,7 +110,7 @@ a:visited {
 
 #header-list img:hover {
   transition: 0.5s;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #header-list li {
@@ -114,10 +129,15 @@ a:visited {
   text-align: center;
 }
 
+#operator {
+    text-align: center;
+}
+
 #operator-list td,tr {          /* man muss den z-index DER LISTENELEMTENTE angeben, weil img das kind ist */
   position: relative;           /* a child is limited by its parent */
   z-index: 1;                   /* <table> anstatt tr und td geht NICHT */
 }
+
 #operator-list td:hover,tr:hover {
   z-index: 2;
 }
@@ -131,10 +151,23 @@ a:visited {
   background-color: #1f1f1f;
   z-index: 1;               /* z-index sollte trozdem hier bleiben; kann nicht vererbt werden */
 }
+
 #operator-list img:hover {
   transition: 0.5s;
   transform: scale(1.2);
   z-index: 2;               /* hier auch */
+}
+
+#operator-list-attacker table {
+  margin-top: 2.5vw;
+  margin-left: 5%;
+}
+
+#operator-list-defender table {
+  margin: 0 auto;
+  margin-right: 5%;
+  margin-top: 2.5vw;
+  margin-bottom: 5vw;
 }
 
 #footlocker {
