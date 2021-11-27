@@ -41,7 +41,7 @@ div.text p,h1,h2,h3,h4,h5,h6 {
 }
 
 div.text {
-  background-color: blue;
+  background-color: #333333;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -52,19 +52,14 @@ div.text-operator-list {
 }
 
 a:link{
-  color: #b5b5b5;
-  text-decoration: none;
-}
-
-a:visited {
   color: white;
   text-decoration: none;
 }
 
-/*img:hover {
-  transition: 0.5s;
-  transform: scale(1.2);
-} */
+a:visited {
+  color: #b5b5b5;
+  text-decoration: none;
+}
 
 ::selection {
   background-color: #b8b8b8;
@@ -87,7 +82,6 @@ a:visited {
   margin: 0px;
   padding-top: 0.7%;
   padding-bottom: 1%;
-  /* padding-left: 25%; */      /* wie weit der ganze shit von links entfernt ist */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -155,7 +149,12 @@ a:visited {
 #operator-list img:hover {
   transition: 0.5s;
   transform: scale(1.2);
-  z-index: 2;               /* hier auch */
+  z-index: 2;              /* hier auch */
+  background-color: #ad9c9a;
+}
+
+#operator-list td:nth-child(odd):hover img {
+  background-color: #9d9aad;
 }
 
 #operator-list-attacker table {
@@ -163,11 +162,20 @@ a:visited {
   margin-left: 5%;
 }
 
+#operator-list-attacker h2 {
+  margin-left: 9%;
+}
+
 #operator-list-defender table {
   margin: 0 auto;
   margin-right: 5%;
   margin-top: 2.5vw;
   margin-bottom: 5vw;
+}
+#operator-list-defender h2 {
+  padding-top: 3%;
+  margin-right: 9%;
+  flex-direction: row-reverse;
 }
 
 #footlocker {
@@ -209,7 +217,8 @@ a:visited {
 .video-placeholder {
   height: 80vh;
   width: 100%;
-  background-color: yellow;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .image-placeholder{
